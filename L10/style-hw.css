@@ -1,0 +1,54 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: rgb(255, 237, 211);
+    color:rgb(0, 0, 0);
+}
+
+h1 {
+    color:#4d2a00;
+}
+
+/* Attribute Selector */
+a {
+    color:rgb(0, 0, 0);
+    text-decoration: none;
+}
+a:hover {
+    color: rgb(46, 75, 141);
+}
+
+/* Sibling Selector*/
+h1, p{
+    background-color: rgb(179, 124, 89);
+    padding: 10px;
+    border-radius: 5px;
+}
+/* :hover Pseudo-class*/
+ul li:hover {
+    color: rgb(72, 149, 231);
+}
+
+/* :nth-child(n) Pseudo-class */
+ul li:nth-child(3) {
+    background-color: rgb(189, 137, 68);
+}
+
+/* :not(selector) Pseudo-class */
+p:not(:first-of-type){
+    text-decoration: underline;
+}
+/* ::before Pseudo-element */
+ul li::before {
+    content: "♟️ ";
+}
+
+/* ::after Pseudo-element */
+a::after{
+    content: " 🏁";
+}
+
+/* ::first-letter Pseudo-element */
+p::first-letter {
+    font-size: 200%;
+    color:rgb(85, 54, 0)
+}
